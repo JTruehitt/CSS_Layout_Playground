@@ -12,7 +12,248 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>CSS Layout Playground</h1>
+    <main class="padding-lg stack">
+      <header class="center">
+        <div class="cover text-center">
+          <p>A place for me to practice responsive CSS Layouts</p>
+          <h1>CSS Layout Playground</h1>
+          <p>
+            This page is a cover/hero layout nested within a centered layout. A
+            text center utility class was used to align the text center
+            horizontally.
+          </p>
+        </div>
+      </header>
+
+      <article class="center box stack">
+        <h3>In this section</h3>
+        <div>
+          <p>
+            this is a combo of box, center, and stack. the box also has default
+            variables declared which allow the bg and color to change. the box
+            is providing the padding within the white, and the center is pushing
+            everything to the center of the page. the content within the box is
+            dictating the width, given the measure setting. the stack is
+            providing spacing between the headers, paragraph content, and the
+            next section.
+          </p>
+        </div>
+        <h3>Lorem, ipsum dolor.</h3>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste cum
+            fugit eos, aliquam aspernatur dolores. Reiciendis delectus, libero
+            deleniti velit cupiditate, voluptate numquam, iure dolores quam
+            facere fugiat! Quidem, quod!
+          </p>
+        </div>
+        <h3>Lorem, ipsum dolor.</h3>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste cum
+            fugit eos, aliquam aspernatur dolores. Reiciendis delectus, libero
+            deleniti velit cupiditate, voluptate numquam, iure dolores quam
+            facere fugiat! Quidem, quod!
+          </p>
+        </div>
+        <h3>Lorem, ipsum dolor.</h3>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste cum
+            fugit eos, aliquam aspernatur dolores. Reiciendis delectus, libero
+            deleniti velit cupiditate, voluptate numquam, iure dolores quam
+            facere fugiat! Quidem, quod!
+          </p>
+        </div>
+      </article>
+
+      <article class="center region">
+        <div class="grid">
+          <div class="card box stack">
+            <h4>These cards</h4>
+            <p>
+              are individual boxes, that also have stack to separate the title
+              and text. the dov boxes are nested within a parent grid class,
+              which is nested within a main center article.
+            </p>
+          </div>
+          <div class="card box stack">
+            <h4>center...</h4>
+            <p>
+              the center class is dictated by the selected measure length. if
+              you remove the center class from this grandparent article, the
+              grid cards will flow the full length of the viewport.
+            </p>
+          </div>
+          <div class="card box">
+            <h4>card title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+              libero maxime ducimus doloremque quisquam velit mollitia. Ea
+              dolores quia necessitatibus!
+            </p>
+          </div>
+          <div class="card box">
+            <h4>card title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+              libero maxime ducimus doloremque quisquam velit mollitia. Ea
+              dolores quia necessitatibus!
+            </p>
+          </div>
+          <div class="card box">
+            <h4>card title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+              libero maxime ducimus doloremque quisquam velit mollitia. Ea
+              dolores quia necessitatibus!
+            </p>
+          </div>
+          <div class="card box">
+            <h4>card title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+              libero maxime ducimus doloremque quisquam velit mollitia. Ea
+              dolores quia necessitatibus!
+            </p>
+          </div>
+          <div class="card box">
+            <h4>card title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+              libero maxime ducimus doloremque quisquam velit mollitia. Ea
+              dolores quia necessitatibus!
+            </p>
+          </div>
+          <div class="card box">
+            <h4>card title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+              libero maxime ducimus doloremque quisquam velit mollitia. Ea
+              dolores quia necessitatibus!
+            </p>
+          </div>
+          <div class="card box">
+            <h4>card title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+              libero maxime ducimus doloremque quisquam velit mollitia. Ea
+              dolores quia necessitatibus!
+            </p>
+          </div>
+          <div class="card box">
+            <h4>card title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+              libero maxime ducimus doloremque quisquam velit mollitia. Ea
+              dolores quia necessitatibus!
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="center">
+        <div class="switcher">
+          <div class="stack">
+            <h3>switcher</h3>
+            <p>
+              until this point, the measure / center combo kept things a uniform
+              width. with switcher, the flex basis/grow properties allow each
+              element to grow the full width of the parent.
+            </p>
+          </div>
+          <div>
+            <h3>parent width</h3>
+            <p>
+              with no explicitly defined width, whis is where you would need
+              some type of container class to define your max inline size
+            </p>
+          </div>
+          <div>
+            <h3>the switcher...</h3>
+            <p>
+              in this instance, allows each child to be displayed horizontally
+              until min flex basis is reached, at which point each item
+              collapses to the next block and takes up the full width
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="center">
+        <div class="with-sidebar">
+          <div class="stack">
+            <h3>sidebar</h3>
+            <p>sidebar content</p>
+            <p>
+              this sidebar is set to have a width of 20 rem as a sidebar and
+              will not grow or shrink until the main content breaches the set
+              50% threshold. after that, the main section will collapse beneath
+              the sidebar.
+            </p>
+            <p>
+              this sidebar div also has stack applied to create vertical space
+              between each element.
+            </p>
+          </div>
+          <div class="stack">
+            <h3>non-sidebar</h3>
+            <p>non-sidebar content</p>
+            <p>
+              the applied gutter value ensures there is space horizontally when
+              the sidebar is in tact, as well as vertically when the layout
+              shifts
+            </p>
+            <div class="grid">
+              <div class="card box">
+                <h4>these cards...</h4>
+                <p>
+                  ...are within a nested grid div on the main side of this
+                  sidebar layout. they still work responsively within this
+                  context
+                </p>
+              </div>
+              <div class="card box">
+                <h4>card title</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Animi libero maxime ducimus doloremque quisquam velit
+                  mollitia. Ea dolores quia necessitatibus!
+                </p>
+              </div>
+              <div class="card box">
+                <h4>card title</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Animi libero maxime ducimus doloremque quisquam velit
+                  mollitia. Ea dolores quia necessitatibus!
+                </p>
+              </div>
+              <div class="card box">
+                <h4>card title</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Animi libero maxime ducimus doloremque quisquam velit
+                  mollitia. Ea dolores quia necessitatibus!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="region">
+        <div class="cluster">
+          <div class="custom-icon">cool img</div>
+          <div>
+            <a href="#">insert</a>
+            <a href="#">random</a>
+            <a href="#">links</a>
+            <a href="#">here</a>
+          </div>
+        </div>
+      </article>
+    </main>
 
     <script src="./assets/script.js"></script>
   </body>
